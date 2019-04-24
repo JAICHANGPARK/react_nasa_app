@@ -5,7 +5,7 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-const ViewerTemplate = ({viewer, spaceNavigator}) => {
+const ViewerTemplate = ({viewer, spaceNavigator }) => {
     return (
         <div className={cx('viewer-template')}>
             

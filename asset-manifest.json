@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react_nasa_app/static/css/main.d7d33921.chunk.css",
+    "main.js": "/react_nasa_app/static/js/main.caca46d2.chunk.js",
+    "main.js.map": "/react_nasa_app/static/js/main.caca46d2.chunk.js.map",
+    "runtime~main.js": "/react_nasa_app/static/js/runtime~main.1259c413.js",
+    "runtime~main.js.map": "/react_nasa_app/static/js/runtime~main.1259c413.js.map",
+    "static/js/2.85510bbc.chunk.js": "/react_nasa_app/static/js/2.85510bbc.chunk.js",
+    "static/js/2.85510bbc.chunk.js.map": "/react_nasa_app/static/js/2.85510bbc.chunk.js.map",
+    "index.html": "/react_nasa_app/index.html",
+    "precache-manifest.4206a8b948b9b8185db6ccc0c53b64c1.js": "/react_nasa_app/precache-manifest.4206a8b948b9b8185db6ccc0c53b64c1.js",
+    "service-worker.js": "/react_nasa_app/service-worker.js",
+    "static/css/main.d7d33921.chunk.css.map": "/react_nasa_app/static/css/main.d7d33921.chunk.css.map"
+  }
+}

@@ -57,16 +57,36 @@ class App extends Component {
   componentDidMount() {
     this.getAPOD();
   }
+
+  handlePrev = () => {
+    const { date } = this.state;
+    const prevDate = moment(date).subtract(1, 'days').format('YYYY-MM-DD');
+    console.log(prevDate);
+    this.getAPOD(prevDate);
+  }
+
+  handleNext = () => {
+    const { date, maxDate } = this.state;
+    if(date === maxDate) return;
+    const nextDate = moment(date).add(1, 'days').format('YYYY-MM-DD');
+    this.getAPOD(nextDate);
+  }
+
   render() {
     const { url, mediaType, loading } = this.state;
-
+    const { handlePrev, handleNext } = this;
     return (
       // <div >
 
       // </div>
       <ViewerTemplate
-        spaceNavigator={<SpaceNavigator />}
-        viewer={<Viewer url={url} mediaType={mediaType} loading={loading} />}
+        spaceNavigator={<SpaceNavigator onPrev={handlePrev} onNext={handleNext}/>}
+        viewer={(
+          <Viewer 
+            url={url}
+            mediaType={mediaType}
+            loading={loading}/>
+        )}
       />
     );
   }
